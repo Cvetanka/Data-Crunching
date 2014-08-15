@@ -24,6 +24,8 @@ This script is aimed to provide one clean, easy readable and workable data table
   
   *'train/test/Inertial Signals/body_gyro_x_train/test.txt': The angular velocity vector measured by the gyroscope for each window        sample. The units are radians/second. 
   
+  Note: The notation train/test means that files with same type of measurements exsist for both data sets.
+  
 The working procedure is as follows:
 
 First data are downloaded and saved as a local copy. They are read in R with read.table() function. To get feeling about the structure of the data sets functions dim() and str() are used. The names of the variables provided by “features.txt” are assigned to the test and train variables (data frames X_train.txt and X_test.txt). Only the variables that contain information about mean and std are interesting for this project and they are extracted with the function grep(). 
