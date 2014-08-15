@@ -26,7 +26,7 @@ This script is aimed to provide one clean, easy readable and workable data table
   
   Note: The notation train/test means that files with same type of measurements exsist for both data sets.
   
-  The following tasks have to be performed:
+  The following tasks have to be performed as stated in the assignment:
   
     Merges the training and the test sets to create one data set.
     
