@@ -16,11 +16,11 @@ This script is aimed to provide one clean, easy readable and workable data table
   
   *'test/y_test.txt': Test labels. 
   
-  *'train/subject_train.txt': Each row identifies the subject who performed the activity for each window sample. Its range is from     1 to 30. The identical file is provided for test set.
+  *'train/subject_train.txt': Each row identifies the subject who performed the activity for each window sample. Its range is from      1 to 30. 
   
-  *'train/test/Inertial Signals/total_acc_x_train/test.txt': The acceleration signal from the smartphone accelerometer X axis in       standard gravity units 'g'. Every row shows a 128 element vector. The same description applies for the 'total_acc_x_train.txt'     and 'total_acc_z_train.txt' files for the Y and Z axis. 
+  *'train/test/Inertial Signals/total_acc_x_train/test.txt': The acceleration signal from the smartphone accelerometer X axis in        standard gravity units 'g'. Every row shows a 128 element vector. The same description applies for the 'total_acc_x_train.txt'      and 'total_acc_z_train.txt' files for the Y and Z axis. 
   
-  *'train/test/Inertial Signals/body_acc_x_train/test.txt': The body acceleration signal obtained by subtracting the gravity from      the total acceleration. 
+  *'train/test/Inertial Signals/body_acc_x_train/test.txt': The body acceleration signal obtained by subtracting the gravity from       the total acceleration. 
   
   *'train/test/Inertial Signals/body_gyro_x_train/test.txt': The angular velocity vector measured by the gyroscope for each window        sample. The units are radians/second. 
   
@@ -28,7 +28,7 @@ This script is aimed to provide one clean, easy readable and workable data table
   
 The working procedure is as follows:
 
-First data are downloaded and saved as a local copy. They are read in R with read.table() function. To get feeling about the structure of the data sets functions dim() and str() are used. The names of the variables provided by “features.txt” are assigned to the test and train variables (data frames X_train.txt and X_test.txt). Only the variables that contain information about mean and std are interesting for this project and they are extracted with the function grep(). 
+First data are downloaded and saved as a local copy. They are read in R with read.table() function. To get feeling about the structure of the data sets functions dim() and str() are used. The names of the variables provided by “features.txt” are assigned to the test and train variables (data frames X_train.txt and X_test.txt). Only the variables that contain information about mean values (the average value of same performance/measurement) and standard deviation (std) are of interest for this project and they are extracted with the function grepl(). 
 
 Further all test data and train data (measurement data sets, training labels and subject_ID) are merged together in one big data frame. The functions used for that are cbind() and rbind().
 
