@@ -75,7 +75,7 @@ Mean_Data$Group.2 <- NULL
 Mean_Data$Activity <- factor(Mean_Data$Activity, labels=Activity_Labels$Activity.Name)
 
 ### Finaly we can write our tidy data frame
-Tidy <- write.table(Mean_Data, file="./Super_Tidy1.txt", row.names=FALSE, sep = " ")
+Tidy <- write.table(Mean_Data, file="./Super_Tidy.txt", row.names=FALSE, sep = " ")
 
 
 
