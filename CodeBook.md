@@ -1,6 +1,6 @@
 # List of variables used in this script#
 
-Here are presented the names and types of the variables used in this script. The names of the files with raw data used as an input in the analysis as well as complete work-flow are given in README file. 
+This document contains the names and types of the variables used in this script. The names of the files with raw data used as an input in the analysis as well as complete work-flow are given in README file. 
 
 
 Activity_Labels  - List (Corresponds to activity_labels.txt. Names of the activities as described in README.md) dim(6 x 2)
@@ -21,7 +21,7 @@ Train_XTrain  – List (corresponds to X_train. Measurement data) dim(7352 x 561
 
 Train_yTrain  - List (corresponds to y_train. Test labels, each number corresponds to some activity) dim(7352 x 1)
 
-Train – List, created by merging all train data (Train_SubjectTrain, Train_yTrain, Train_XTrain. Complete and processe train data with mean and std values) dim(7352 x 81)
+Train – List, created by merging all train data (Train_SubjectTrain, Train_yTrain, Train_XTrain. Complete and processed train data with mean and std values) dim(7352 x 81)
 
 Data  - Closure, obtained putting together Test and Train dim(10299 x 81)
 
