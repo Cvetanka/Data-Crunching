@@ -1,5 +1,6 @@
 
-These are the names and types of the variables used in this script. The names of the files with raw data used as an input in the analysis as well complete work-flow is given in README file. 
+These are the names and types of the variables used in this script. The names of the files with raw data used as an input 
+in the analysis as well complete work-flow is given in README file. 
 
 
 Activity_Labels  - List (Corresponds to activity_labels.txt) 
