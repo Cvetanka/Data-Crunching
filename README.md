@@ -26,6 +26,18 @@ This script is aimed to provide one clean, easy readable and workable data table
   
   Note: The notation train/test means that files with same type of measurements exsist for both data sets.
   
+  The following tasks have to be performed:
+  
+    Merges the training and the test sets to create one data set.
+    
+    Extracts only the measurements on the mean and standard deviation for each measurement. 
+    
+    Uses descriptive activity names to name the activities in the data set
+    
+    Appropriately labels the data set with descriptive variable names. 
+    
+    Creates a second, independent tidy data set with the average of each variable for each activity and each subject. 
+
 The working procedure is as follows:
 
 First data are downloaded and saved as a local copy. They are read in R with read.table() function. To get feeling about the structure of the data sets functions dim() and str() are used. The names of the variables provided by “features.txt” are assigned to the test and train variables (data frames X_train.txt and X_test.txt). Only the variables that contain information about mean values (the average value of some performance/measurement) and standard deviation (std) are of interest for this project and they are extracted with the function grepl(). 
