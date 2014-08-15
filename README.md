@@ -18,7 +18,7 @@ This script is aimed to provide one clean, easy readable and workable data table
   
   *'train/subject_train.txt': Each row identifies the subject who performed the activity for each window sample. Its range is from      1 to 30. 
   
-  *'train/test/Inertial Signals/total_acc_x_train/test.txt': The acceleration signal from the smartphone accelerometer X axis in        standard gravity units 'g'. Every row shows a 128 element vector. The same description applies for the 'total_acc_x_train.txt'      and 'total_acc_z_train.txt' files for the Y and Z axis. 
+  *'train/test/Inertial Signals/body_acc_x_train/test.txt': The body acceleration signal obtained by subtracting the gravity from       the total acceleration. 
   
   *'train/test/Inertial Signals/body_acc_x_train/test.txt': The body acceleration signal obtained by subtracting the gravity from       the total acceleration. 
   
@@ -47,4 +47,6 @@ Further all test data and train data (measurement data sets, training labels and
 The final goal is to average all data by subject and activity and write in the output one tidy data set. That is achieved with the function aggregate() and function write.table().
 
 Final note: This script requires the packages: reshape, table and/or data.table.   
+
+Note: It is recommended in the instruction, first to merge the data sets and than to extract mean and std values. However I found more convenient first to extract the desired values from the separate data sets and than to merge them in one big data frame. This deviation from recommended routine, by no means affects the final result. It was also in my understanding to extract all measurements that contain some mean value (like meanFreq) what has resulted in additional information and larger final (tidy) data table. 
 
